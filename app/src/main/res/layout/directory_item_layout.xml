@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/directorycardview"
+    android:layout_width="match_parent"
+    android:layout_height="156dp"
+    android:layout_margin="8dp"
+    app:cardElevation="8dp"
+    app:contentPadding="8dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/directoryimageview"
+            android:layout_width="106dp"
+            android:layout_height="101dp"
+            android:src="@drawable/directory_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dr.Avul Pakir Jainulabdeen Abdul \nKalam"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/directoryimageview"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/indiantext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Indian aerospace scientist and politician "
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/directoryimageview"
+            app:layout_constraintTop_toBottomOf="@id/nametext" />
+
+        <TextView
+            android:id="@+id/shillongtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indian Institute of Management Shillong"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/directoryimageview"
+            app:layout_constraintTop_toBottomOf="@id/indiantext" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/company_logo1"
+            app:layout_constraintBottom_toTopOf="@id/indiantext"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/directoryfavimageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_favorite_24"
+            app:layout_constraintBottom_toBottomOf="@id/directoryimageview"
+            app:layout_constraintEnd_toEndOf="@id/directoryimageview" />
+
+        <LinearLayout
+            android:weightSum="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/locationimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_location_on_24" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/callimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_call_24" />
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/emailimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_email_24"/>
+            <ImageView
+                android:id="@+id/messageimageview"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_message_24"/>
+            <ImageView
+                android:id="@+id/whatsappimageview"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/whats_app"/>
+            <ImageView
+                android:id="@+id/shareimageview"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
